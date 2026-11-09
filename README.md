@@ -90,6 +90,12 @@ The qualitative patterns repeat under the second seed: the four-order-of-magnitu
 - **Clipping at 1.0 is not a safety net here.** I expected a threshold like this to catch rare spikes. For ReLU it is active in more than four out of five steps, and because it scales all layers equally, it neither helps nor hurts the layer-to-layer balance, it only changes the effective learning rate.
 - **A single heatmap is easy to over-read.** The per-batch stripes in the ReLU heatmaps look like structure, but they differ between seeds. The depth profile is what repeats.
 
+## Data source
+
+Dry Bean Dataset, UCI Machine Learning Repository, DOI [10.24432/C50S4B](https://doi.org/10.24432/C50S4B), licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The data is not part of this repository, it is downloaded on the first run.
+
+Original paper: Koklu, M. and Ozkan, I. A. (2020). Multiclass classification of dry beans using computer vision and machine learning techniques. *Computers and Electronics in Agriculture*, 174, 105507. DOI [10.1016/j.compag.2020.105507](https://doi.org/10.1016/j.compag.2020.105507).
+
 ## Limitations
 
 - Two seeds and one train/test split; differences of a few tenths of a percent are not established.
